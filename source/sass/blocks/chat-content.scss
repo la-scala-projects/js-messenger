@@ -1,0 +1,12 @@
+.chat-content {
+  display: grid;
+  align-content: end;
+  align-items: end;
+  justify-content: end;
+  flex-grow: 1;
+  padding: 15px 20px 24px 30px;
+  overflow: auto;
+  background-color: #5c8ab3;
+  background-image: url("pattern.svg");
+  background-repeat: repeat;
+}
