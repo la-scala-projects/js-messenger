@@ -6,27 +6,101 @@
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
   <body>
+    <main class="chat-wrapper">
     <section class="chat">
       <h1 class="visually-hidden">Chat</h1>
 
-      <div class="chat-content"></div>
+      <div class="chat-content">
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+        <div class="chat-message" tabindex="0">
+          <span class="chat-message__name">Unknown user</span>
+          <p class="chat-message__text">asdasdasdas</p>
+          <button class="chat-message__button" type="button">Delete</button>
+        </div>
+      </div>
 
       <form class="chat-form" action="" method="post">
-        <input
-          class="chat-form-input"
-          type="text"
-          aria-label="Your message"
-          placeholder="Write here something"
-        />
-        <button class="chat-form-button" type="submit">Send</button>
+        <div class="chat-form__input-wrapper">
+          <input
+            class="chat-form__input"
+            type="text"
+            aria-label="Your message"
+            placeholder="Write here something..."
+          />
+          <button class="chat-form__button" type="submit">Send</button>
+        </div>
       </form>
     </section>
-
+  </main>
     <template id="message-template">
       <div class="chat-message" tabindex="0">
-        <span class="chat-message-name">Unknown user</span>
-        <p class="chat-message-text"></p>
-        <button class="chat-message-button" type="button">Delete</button>
+        <span class="chat-message__name">Unknown user</span>
+        <p class="chat-message__text"></p>
+        <button class="chat-message__button" type="button">Delete</button>
       </div>
     </template>
 
