@@ -1,6 +1,6 @@
 .chat-message {
   position: relative;
-  padding: 3px 20px 11px;
+  padding: 9px 20px 11px;
   background-color: #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 20px 4px 4px 20px;
@@ -23,9 +23,9 @@
 .chat-message-name {
   display: inline-block;
   margin-bottom: 2px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
-  color: #6994ba;
+  color: #046e8f;
 }
 
 .chat-message-button {
@@ -37,9 +37,10 @@
   padding: 0;
   visibility: hidden;
   background-color: #ffffff;
-  background-image: url("icon-cross.svg");
+  background-image: url("../img/delete-message.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 8px 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 50%;
