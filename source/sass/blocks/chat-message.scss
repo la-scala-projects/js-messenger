@@ -5,22 +5,37 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 20px 4px 4px 20px;
   max-width: 425px;
+  margin-top: auto;
+  margin-left: auto;
+
+  & + & {
+    margin-top: 12px;
+  }
+
+  &:first-child {
+    border-radius: 20px 20px 4px 20px;
+  }
+
+  &:last-child {
+    border-radius: 20px 4px 20px 20px;
+    margin-bottom: 15px;
+  }
+
+  &:hover .chat-message__button,
+  &:focus .chat-message__button {
+    visibility: visible;
+  }
+
+  &:focus-within .chat-message__button {
+    visibility: visible;
+  }
 }
 
-.chat-message:hover .chat-message-button,
-.chat-message:focus .chat-message-button {
-  visibility: visible;
-}
-
-.chat-message:focus-within .chat-message-button {
-  visibility: visible;
-}
-
-.chat-message-text {
+.chat-message__text {
   margin: 0;
 }
 
-.chat-message-name {
+.chat-message__name {
   display: inline-block;
   margin-bottom: 2px;
   font-size: 16px;
@@ -28,7 +43,7 @@
   color: #046e8f;
 }
 
-.chat-message-button {
+.chat-message__button {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -49,16 +64,4 @@
   user-select: none;
   touch-action: manipulation;
   cursor: pointer;
-}
-
-.chat-message + .chat-message {
-  margin-top: 12px;
-}
-
-.chat-message:last-child {
-  border-radius: 20px 4px 20px 20px;
-}
-
-.chat-message:first-child {
-  border-radius: 20px 20px 4px 20px;
 }
